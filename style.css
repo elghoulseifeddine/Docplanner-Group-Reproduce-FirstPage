@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0px 170px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px 170px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 500px;
+  box-shadow: 3px 3px #dadada4f;
+}
+
+header div {
+  width: 30%;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+li {
+  color: #ababab;
+}
+
+.active {
+  color: #00b39b;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: white;
+  display: none;
+  width: 200px;
+  list-style: none;
+  padding: 20px;
+  left: 0;
+}
+.dropdown li {
+  padding: 10px;
+}
+
+.menu li:hover {
+  color: #00b39b;
+}
+
+.dropdown li:hover {
+  background-color: #dadada4f;
+  color: #00b39b;
+}
+
+.dropdown-btn {
+  position: relative;
+}
+
+.dropdown-btn:hover .dropdown {
+  display: block;
+}
+.section1 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.intro {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.intro h1 {
+  margin-top: 30px;
+  color: #00b39b;
+}
+.description {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 99.5%;
+  color: #747474;
+}
+#profil {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.doctor {
+  background-color: #3d83df;
+}
+.doctor:hover {
+  background-color: #296ec9;
+}
+.patient {
+  background-color: #00ccb1;
+}
+.patient:hover {
+  background-color: #0daa95;
+}
+.clinic {
+  background-color: #283849;
+}
+.clinic:hover {
+  background-color: #1c2733;
+}
+.patient img,
+.doctor img,
+.clinic img {
+  width: 20px;
+  height: 20px;
+}
+.style {
+  width: 28%;
+  height: 250px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+select {
+  background-color: transparent;
+  border: transparent;
+  outline: 0;
+  font-size: 20px;
+  color: white;
+}
+select option {
+  background-color: white;
+  color: black;
+}
+
+.we-are {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.we-are h4 {
+  width: 30%;
+  font-size: 25px;
+  font-weight: 300;
+  padding-right: 30px;
+  color: #00ccb1;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 100%;
+  padding-left: 20px;
+}
+.lg-style {
+  fill: #ababab;
+  font-size: 15px;
+}
+.lg-style:hover {
+  fill: #00b39b;
+}
+.img-style {
+  -webkit-filter: grayscale(100%);
+}
+.img-style:hover {
+  -webkit-filter: none;
+}
+
+.section2 {
+  margin: 50px -170px;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e5faf8;
+  background-image: url(https://www.docplanner.com/img/logo.png);
+  background-repeat: no-repeat;
+  background-size: 400px;
+  overflow: hidden;
+  background-position-y: 300px;
+  background-position-x: 100px;
+}
+.argument {
+  width: 30%;
+  margin-left: 170px;
+  margin-bottom: 350px;
+  display: flex;
+  flex-direction: column;
+}
+.argument h2 {
+  color: #00b39b;
+  width: 60%;
+}
+.argument p {
+  margin-top: 30px;
+  font-size: 15px;
+  color: #747474;
+}
+#arguments {
+  width: 35%;
+  margin-right: 170px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.argumentation {
+  width: 35%;
+  height: 180px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  font-size: 20px;
+  padding: 20px;
+}
+.argumentation:nth-of-type(even) {
+  margin-top: -20px;
+}
+.argumentation h4 {
+  font-size: 20px;
+  color: #00ccb1;
+}
+.p1 {
+  font-size: 13px;
+  color: #747474;
+}
+
+.section3 {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.improve {
+  margin: 70px 230px 0px 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.improve h1 {
+  color: #00b39b;
+}
+.improve p {
+  margin-top: 30px;
+  color: #747474;
+}
+.blog {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.pays {
+  width: 28%;
+  height: 250px;
+  margin: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  border: 0.5px solid rgb(240, 240, 252);
+}
+
+.blog:last-child {
+  align-self: flex-start;
+  border: 5px solid black;
+}
+.pays:hover {
+  box-shadow: 2px 10px 34px -3px rgba(0, 0, 0, 0.34);
+}
+
+.pays img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.pays-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pays button {
+  width: 40%;
+  background-color: #3d83df;
+  color: white;
+  border: transparent;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.pays h3 {
+  width: 20%;
+  color: #747474;
+}
+
+.more {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.more button {
+  margin-top: 20px;
+  padding: 10px;
+  height: 40px;
+  background-color: #3d83df;
+  color: white;
+  border: transparent;
+  border-radius: 3px;
+  font-weight: bold;
+}
+button:hover {
+  background-color: #3386f3;
+}
+hr {
+  margin: 60px -170px 60px -170px;
+}
+
+footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #747474;
+}
+footer p {
+  padding: 8px;
+}
